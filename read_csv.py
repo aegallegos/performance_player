@@ -2,6 +2,7 @@ import csv
 
 
 def read_csv(path):
+    # Abre el archivo en modo lectura
     with open(path, "r") as csvfile:
         reader = csv.reader(csvfile, delimiter=",")
         header = next(reader)
